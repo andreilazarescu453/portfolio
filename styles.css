@@ -757,14 +757,12 @@ section {
   }
 
   .modal__content {
-    width: 100vw;
-    min-height: 100dvh;
-    border-radius: 0;
+    width: min(94vw, 1000px);
   }
 
   .modal__content video {
     width: 100%;
-    max-height: 80vh;
+    max-height: 78vh;
   }
 }
 

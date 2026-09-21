@@ -2,6 +2,9 @@
 videos/*.mp4
 !videos/web/
 
+# Local context file (memory checkpoint, not for hosting)
+PROJECT_CONTEXT.md
+
 # OS junk
 Thumbs.db
 .DS_Store

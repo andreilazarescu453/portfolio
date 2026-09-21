@@ -21,20 +21,24 @@ document.addEventListener("DOMContentLoaded", () => {
     revealObserver.observe(el);
   });
 
-  // ---------- VIDEO HOVER PLAY/PAUSE ----------
-  document.querySelectorAll(".work__video-wrap").forEach((wrap) => {
-    const video = wrap.querySelector("video");
-    if (!video) return;
+  // ---------- VIDEO HOVER PLAY/PAUSE (desktop only) ----------
+  const isTouch = window.matchMedia("(hover: none), (pointer: coarse)").matches;
 
-    wrap.addEventListener("mouseenter", () => {
-      video.play().catch(() => {});
-    });
+  if (!isTouch) {
+    document.querySelectorAll(".work__video-wrap").forEach((wrap) => {
+      const video = wrap.querySelector("video");
+      if (!video) return;
 
-    wrap.addEventListener("mouseleave", () => {
-      video.pause();
-      video.currentTime = 0;
+      wrap.addEventListener("mouseenter", () => {
+        video.play().catch(() => {});
+      });
+
+      wrap.addEventListener("mouseleave", () => {
+        video.pause();
+        video.currentTime = 0;
+      });
     });
-  });
+  }
 
   // ---------- SMOOTH SCROLL FOR NAV LINKS ----------
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

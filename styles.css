@@ -626,6 +626,28 @@ section {
 .work__grid .reveal:nth-child(2) { transition-delay: 0.1s; }
 
 /* ---------- RESPONSIVE ---------- */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .work__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero__intro-text {
+    min-height: 180px;
+  }
+
+  .hero__name {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+  }
+}
+
+/* Phone */
 @media (max-width: 768px) {
   .nav {
     top: 0.5rem;
@@ -642,6 +664,37 @@ section {
     grid-template-columns: 1fr;
   }
 
+  .hero {
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+  }
+
+  .hero__intro {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+    text-align: center;
+  }
+
+  .hero__photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero__intro-text {
+    min-height: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero__name {
+    font-size: clamp(2.2rem, 11vw, 3rem);
+  }
+
+  .hero__sub {
+    margin-right: 0;
+  }
+
   .hero__cta {
     flex-direction: column;
     align-items: center;
@@ -651,5 +704,69 @@ section {
     width: 100%;
     max-width: 280px;
     text-align: center;
+  }
+
+  .work__tools {
+    margin-top: 3rem;
+    padding-top: 2rem;
+  }
+
+  .work__tools .skills__logos {
+    gap: 1.75rem;
+  }
+
+  .work__tools .skill-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .about__text p {
+    font-size: 0.95rem;
+  }
+
+  .contact__panel {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact__actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .contact__actions .btn {
+    max-width: none;
+  }
+
+  .modal__content {
+    width: 100vw;
+    min-height: 100dvh;
+    border-radius: 0;
+  }
+
+  .modal__content video {
+    width: 100%;
+    max-height: 80vh;
+  }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+  .nav__links {
+    gap: 0.9rem;
+    font-size: 0.7rem;
+  }
+
+  .hero__name {
+    font-size: 2rem;
+  }
+
+  .work__tools .skills__logos {
+    gap: 1.25rem;
+  }
+
+  .work__tools .skill-logo {
+    width: 40px;
+    height: 40px;
   }
 }

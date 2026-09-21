@@ -1,0 +1,7 @@
+# Original video files (full quality) — kept locally, not hosted
+videos/*.mp4
+!videos/web/
+
+# OS junk
+Thumbs.db
+.DS_Store

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrei Lazarescu — Motion Designer & Video Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#hero" class="nav__brand">AL</a>
+    <ul class="nav__links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+
+    <div class="hero__content reveal">
+      <div class="hero__intro">
+        <img src="images/profile.jpg" alt="Andrei Lazarescu" class="hero__photo" />
+        <div class="hero__intro-text">
+          <p class="hero__eyebrow">Motion Designer · Video Editor</p>
+          <h1 class="hero__name">
+            <span class="line"><span>Andrei</span></span>
+            <span class="line"><span>Lazarescu</span></span>
+          </h1>
+          <p class="hero__sub">UI animation · video editing · visual storytelling</p>
+        </div>
+      </div>
+      <div class="hero__cta">
+        <a href="#work" class="btn btn--primary">See My Work</a>
+        <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <a href="#work">scroll ↓</a>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="work">
+    <div class="work__head reveal">
+      <span class="section__num">01</span>
+      <h2 class="section__title">Work</h2>
+    </div>
+    <div class="work__grid">
+      <div class="work__item reveal">
+        <div class="work__video-wrap">
+          <video muted loop playsinline preload="metadata" onclick="openVideoModal(this)">
+            <source src="videos/web/spotify_animation.mp4" type="video/mp4" />
+          </video>
+          <div class="work__play">▶</div>
+        </div>
+        <div class="work__meta">
+          <h3 class="work__label">Spotify UI Animation</h3>
+          <p class="work__desc">After Effects motion design</p>
+        </div>
+      </div>
+      <div class="work__item reveal">
+        <div class="work__video-wrap">
+          <video muted loop playsinline preload="metadata" onclick="openVideoModal(this)">
+            <source src="videos/web/x_v7.mp4" type="video/mp4" />
+          </video>
+          <div class="work__play">▶</div>
+        </div>
+        <div class="work__meta">
+          <h3 class="work__label">X — Motion Piece</h3>
+          <p class="work__desc">Brand animation · Illustrator + AE</p>
+        </div>
+      </div>
+      <div class="work__item reveal">
+        <div class="work__video-wrap">
+          <video muted loop playsinline preload="metadata" onclick="openVideoModal(this)">
+            <source src="videos/web/McDonalds_ad.mp4" type="video/mp4" />
+          </video>
+          <div class="work__play">▶</div>
+        </div>
+        <div class="work__meta">
+          <h3 class="work__label">McDonald's Ad</h3>
+          <p class="work__desc">Commercial video · motion graphics</p>
+        </div>
+      </div>
+      <div class="work__item reveal">
+        <div class="work__video-wrap">
+          <video muted loop playsinline preload="metadata" onclick="openVideoModal(this)">
+            <source src="videos/web/jfk.mp4" type="video/mp4" />
+          </video>
+          <div class="work__play">▶</div>
+        </div>
+        <div class="work__meta">
+          <h3 class="work__label">JFK — Documentary Edit</h3>
+          <p class="work__desc">Documentary-style editing · music locally generated with AI</p>
+        </div>
+      </div>
+      <div class="work__item reveal">
+        <div class="work__video-wrap">
+          <video muted loop playsinline preload="metadata" onclick="openVideoModal(this)">
+            <source src="videos/web/tiktok_tari.mp4" type="video/mp4" />
+          </video>
+          <div class="work__play">▶</div>
+        </div>
+        <div class="work__meta">
+          <h3 class="work__label">World Map Quiz — Reel</h3>
+          <p class="work__desc">Social media reel · guess-the-country map animation</p>
+        </div>
+      </div>
+      <div class="work__item reveal">
+        <div class="work__video-wrap">
+          <video muted loop playsinline preload="metadata" onclick="openVideoModal(this)">
+            <source src="videos/web/Map_buc_v3.mp4" type="video/mp4" />
+          </video>
+          <div class="work__play">▶</div>
+        </div>
+        <div class="work__meta">
+          <h3 class="work__label">Map Animation</h3>
+          <p class="work__desc">Camera map animation · After Effects</p>
+        </div>
+      </div>
+    </div>
+    <div class="work__tools reveal">
+      <div class="skills__logos">
+        <div class="skill-logo" title="After Effects">
+          <img src="images/logos/ae.svg" alt="After Effects" />
+        </div>
+        <div class="skill-logo" title="Premiere Pro">
+          <img src="images/logos/pr.svg" alt="Premiere Pro" />
+        </div>
+        <div class="skill-logo" title="Photoshop">
+          <img src="images/logos/ps.svg" alt="Photoshop" />
+        </div>
+        <div class="skill-logo" title="Illustrator">
+          <img src="images/logos/ai.svg" alt="Illustrator" />
+        </div>
+        <div class="skill-logo" title="ComfyUI">
+          <img src="images/logos/comfyui.svg" alt="ComfyUI" />
+        </div>
+      </div>
+      <p class="skills__note">The tools behind my work — editing, animation, and design.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about__head reveal">
+      <span class="section__num">02</span>
+      <h2 class="section__title">About</h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__text reveal">
+        <p>I'm a 23-year-old motion designer and video editor. I started out as a cameraman and long-form video editor at a local news station — cutting cultural events, interviews, and news segments.</p>
+        <p>Since then I've shifted focus to UI animation in After Effects — designing interfaces in Illustrator and bringing them to life with motion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact__head reveal">
+      <span class="section__num">03</span>
+      <h2 class="section__title">Contact</h2>
+    </div>
+    <div class="contact__panel reveal">
+      <h3 class="contact__heading">Need a video editor?</h3>
+      <div class="contact__actions">
+        <a href="mailto:lazarescu482@gmail.com" class="btn btn--primary">Email Me</a>
+        <a href="https://www.linkedin.com/in/andrei-mihai-lazarescu-0b9254268/" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Andrei Lazarescu</p>
+  </footer>
+
+  <!-- VIDEO MODAL -->
+  <div class="modal" id="videoModal" onclick="closeVideoModal()">
+    <div class="modal__content" onclick="event.stopPropagation()">
+      <button class="modal__close" onclick="closeVideoModal()">×</button>
+      <video id="modalVideo" controls autoplay>
+        <source src="" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

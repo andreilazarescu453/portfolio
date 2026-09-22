@@ -578,11 +578,10 @@ section {
   position: relative;
   width: min(90vw, 1000px);
   background: #000;
-  border-radius: 12px;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  contain: layout paint;
 }
 
 .modal__close {
@@ -612,7 +611,6 @@ section {
   max-height: 78vh;
   aspect-ratio: auto;
   display: block;
-  will-change: transform;
 }
 
 /* ---------- REVEAL ANIMATIONS ---------- */

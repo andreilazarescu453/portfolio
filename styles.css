@@ -422,6 +422,79 @@ section {
   font-size: 0.85rem;
 }
 
+/* ---------- WORK: INTERVIEWS & MEDIA PRODUCTION ---------- */
+.work__section-break {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border);
+}
+
+.work__section-kicker {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.work__section-head {
+  font-size: clamp(1.5rem, 2.5vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+}
+
+.work__grid--links {
+  margin-top: 0;
+}
+
+.work__item--link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.work__item--link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+  border-color: var(--accent);
+}
+
+.work__link-source {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.work__item--link .work__label {
+  margin-bottom: 0.25rem;
+}
+
+.work__link-arrow {
+  font-size: 1.4rem;
+  color: var(--muted);
+  flex-shrink: 0;
+  transition: color 0.2s ease, transform 0.3s ease;
+}
+
+.work__item--link:hover .work__link-arrow {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
+
 /* ---------- ABOUT ---------- */
 .about {
   padding-top: clamp(3rem, 6vw, 5rem);
